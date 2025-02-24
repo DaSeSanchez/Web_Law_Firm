@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METADATA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Law Firm Lawyers & Associates</title>
+    <meta name="description"
+        content="Leading law firm with 30 years of experience in corporate, criminal, and labor law. Free consultation">
+    <meta name="keywords" content="lawyers, corporate law, legal advice, law firm">
+    <meta name="author" content="Law Firm Lawyers & Associates">
+
+    <!-- EXTERNAL RESOURCES -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="preload" href="../../videos/herolegal.mp4" as="video">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+
+<body>
+    <!-- *********************** HEADER *********************** -->
+    <header>
+        <img src="../../imgs/logo.png" class="logo" alt="Law Firm Logo" loading="lazy">
+        <div class="header-content">
+            <h1 class="header-title">Law Firm Lawyers & Associates</h1>
+            <p class="header-subtitle">Excellence and commitment in legal advice</p>
+        </div>
+        <button class="menu-toggle" aria-label="Open menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- *********************** MAIN NAVIGATION *********************** -->
+    <nav class="nav-main">
+        <nav class="center-content">
+            <div class="nav-close"><i class="fas fa-times"></i></div>
+            <a href="index.html" class="active">Home</a>
+
+            <!-- Dropdown: The Firm -->
+            <div class="nav-dropdown">
+                <a href="#" class="nav-dropbtn">The Firm <i class="fas fa-chevron-down"></i></a>
+                <div class="nav-dropdown-content">
+                    <a href="pages/sobre-nosotros.html">About Us</a>
+                    <a href="pages/casos-de-exito.html">Success Cases</a>
+                    <a href="pages/nuestro-proceso.html">Our Process</a>
+                </div>
+            </div>
+
+            <a href="pages/areas-de-practica.html">Practice Areas</a>
+
+            <!-- Dropdown: Resources -->
+            <div class="nav-dropdown">
+                <a href="#" class="nav-dropbtn">
+                    Resources <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="nav-dropdown-content">
+                    <a href="pages/articulos.html">Legal Articles</a>
+                    <a href="pages/guias-legales.html">Legal Guides</a>
+                    <a href="pages/preguntas-frecuentes.html">FAQs</a>
+                </div>
+            </div>
+
+            <a href="pages/contacto.html">Contact</a>
+
+            <div class="search-container">
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropbtn" id="language-dropbtn">
+                        <span class="flag-icon flag-icon-gb" id="selected-flag"></span>
+                        <span id="selected-language">English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="nav-dropdown-content">
+                        <a href="#" onclick="cambiarIdioma('es', 'Español', 'flag-icon-es')">
+                            <span class="flag-icon flag-icon-es"></span> Spanish
+                        </a>
+                        <a href="#" onclick="cambiarIdioma('fr', 'Français', 'flag-icon-fr')">
+                            <span class="flag-icon flag-icon-fr"></span> French
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+    <!-- *********************** HERO SECTION *********************** -->
+    <div class="hero-video" role="region" aria-label="Firm presentation">
+        <video autoplay muted loop playsinline aria-hidden="false">
+            <source src="../../videos/herolegal.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay" aria-hidden="false">
+            <h1>Justice with Excellence</h1>
+            <div class="title-divider"></div>
+            <p>Your legal success is our commitment.</p>
+        </div>
+        <div class="video-text-alternative" style="display:none;">
+            Leading law firm in comprehensive legal solutions
+        </div>
+    </div>
+
+    <div class="hero-separador"></div>
+
+    <!-- *********************** CERTIFICATIONS SECTION *********************** -->
+    <section class="certificaciones">
+        <div class="content">
+            <div class="certificaciones-header">
+                <h2 class="section-title">Institutional Recognitions</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle-inicio">Certifications that endorse our professional excellence.</p>
+            </div>
+
+            <div class="certificados-grid">
+                <div class="certificado-item">
+                    <img src="../../imgs/iconos/cpacf.png" alt="Bar Association" loading="lazy">
+                    <span class="certificado-label">Active member of the Bar Association</span>
+                </div>
+                <div class="certificado-item">
+                    <img src="../../imgs/iconos/legal500.jpg" alt="Legal 500" loading="lazy">
+                    <span class="certificado-label">Top tier in Legal 500 Latin America</span>
+                </div>
+                <div class="certificado-item">
+                    <img src="../../imgs/iconos/iso9001.jpg" alt="ISO 9001" loading="lazy">
+                    <span class="certificado-label">ISO 9001:2015 Certification</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *********************** STATISTICS SECTION *********************** -->
+    <section class="estadisticas">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-num" data-count="30">0</div>
+                <div class="stat-text">Years of Experience</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num" data-count="98">0</div>
+                <div class="stat-text">Successful Cases</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num" data-count="150">0</div>
+                <div class="stat-text">Satisfied Clients</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *********************** SERVICES SECTION *********************** -->
+    <section class="servicios">
+        <div class="content">
+            <h2>Our Specialized Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Corporate Law</h3>
+                    <p>Comprehensive legal advice for national and international companies.</p>
+                    <ul class="service-list">
+                        <li>Company formation</li>
+                        <li>Mergers and acquisitions</li>
+                        <li>Commercial contracts</li>
+                    </ul>
+                    <button class="btn-servicio">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <h3>Criminal Law</h3>
+                    <p>Specialized defense in complex criminal cases.</p>
+                    <ul class="service-list">
+                        <li>Trial defense</li>
+                        <li>Criminal process advice</li>
+                        <li>Appeals and resources</li>
+                    </ul>
+                    <button class="btn-servicio">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <h3>Labor Law</h3>
+                    <p>Legal solutions for labor conflicts.</p>
+                    <ul class="service-list">
+                        <li>Unjustified dismissals</li>
+                        <li>Collective bargaining</li>
+                        <li>Labor audits</li>
+                    </ul>
+                    <button class="btn-servicio">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- *********************** TESTIMONIALS SECTION *********************** -->
+<section class="testimonios">
+    <div class="content">
+        <h2>Client Testimonials</h2>
+        <div class="testimonio-slider-container">
+            <div class="testimonio-slider">
+                <div class="testimonio-card">
+                    <img src="../../imgs/personas/persona1.jpg" alt="Client 1" class="client-photo" loading="lazy">
+                    <blockquote>
+                        "Excellent professional service, they resolved my complex corporate case in record time."
+                    </blockquote>
+                    <div class="client-info">
+                        <div class="client-name">Carlos Gutiérrez</div>
+                        <div class="client-empresa">Financial Director - TechCorp</div>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <img src="../../imgs/personas/persona2.jpg" alt="Client 2" class="client-photo" loading="lazy">
+                    <blockquote>
+                        "Impeccable advice during our international merger process. Highly recommended."
+                    </blockquote>
+                    <div class="client-info">
+                        <div class="client-name">María Fernández</div>
+                        <div class="client-empresa">CEO - GlobalMerge Inc.</div>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <img src="../../imgs/personas/persona3.jpg" alt="Client 3" class="client-photo" loading="lazy">
+                    <blockquote>
+                        "Exceptional defense in our criminal case. Committed and detail-oriented professionals."
+                    </blockquote>
+                    <div class="client-info">
+                        <div class="client-name">Roberto Sánchez</div>
+                        <div class="client-empresa">Entrepreneur</div>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <img src="../../imgs/personas/persona4.jpg" alt="Client 4" class="client-photo" loading="lazy">
+                    <blockquote>
+                        "Efficient solution to our labor conflict. Transparency and extraordinary results."
+                    </blockquote>
+                    <div class="client-info">
+                        <div class="client-name">Laura Méndez</div>
+                        <div class="client-empresa">HR Director - Business Group</div>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <img src="../../imgs/personas/persona6.jpg" alt="Client 5" class="client-photo" loading="lazy">
+                    <blockquote>
+                        "The legal team demonstrated great capability in handling my real estate case. The attention was excellent at all times."
+                    </blockquote>
+                    <div class="client-info">
+                        <div class="client-name">Javier Pérez</div>
+                        <div class="client-empresa">Real Estate Entrepreneur</div>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <img src="../../imgs/personas/persona5.jpg" alt="Client 6" class="client-photo" loading="lazy">
+                    <blockquote>
+                        "We received exceptional support throughout the process. Their deep knowledge of labor law made the difference."
+                    </blockquote>
+                    <div class="client-info">
+                        <div class="client-name">Susana Rodríguez</div>
+                        <div class="client-empresa">Legal Manager - United Companies</div>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <img src="../../imgs/personas/persona7.jpg" alt="Client 7" class="client-photo" loading="lazy">
+                    <blockquote>
+                        "The treatment was cordial and professional, and their speed in resolving my legal issue was impressive. Highly recommended."
+                    </blockquote>
+                    <div class="client-info">
+                        <div class="client-name">Francisco Martínez</div>
+                        <div class="client-empresa">Operations Director - MovilExpress</div>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <img src="../../imgs/personas/persona8.jpg" alt="Client 8" class="client-photo" loading="lazy">
+                    <blockquote>
+                        "The legal team was key to resolving our business dispute. Their strategic approach and attention to detail gave us the confidence we needed."
+                    </blockquote>
+                    <div class="client-info">
+                        <div class="client-name">Eduardo Romero</div>
+                        <div class="client-empresa">CEO - Innovatech Solutions</div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-arrows">
+                <button class="arrow-btn prev-btn" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="arrow-btn next-btn" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </div>
+</section>
+
+    <!-- *********************** FLOATING CTA *********************** -->
+    <div class="floating-cta">
+        <a href="pages/contacto.html" class="cta-btn">
+            <i class="fas fa-comment-dots"></i>
+            Free Consultation
+        </a>
+    </div>
+
+    <!-- *********************** FOOTER *********************** -->
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column contacto">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i>+54 11 1234-5678</p>
+                <p><i class="fas fa-clock"></i>Monday to Friday 9:00 AM - 6:00 PM</p>
+                <p><i class="fas fa-envelope"></i>contact@lawfirm.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>Av. Corrientes 1234, Buenos Aires</p>
+                <!-- *********************** MAPA DE GOOGLE *********************** -->
+                <div class="google-map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0054390241967!2d-58.3867115249571!3d-34.6040239729541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac59a5bd441%3A0x1408e2f06974627!2sAv.%20Corrientes%201234%2C%20C1043AAZ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1739907147206!5m2!1ses!2sar"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-column enlaces-rapidos">
+                <h3>Quick Links</h3>
+                <p><a href="../pages/sobre-nosotros.html">About Us</a></p>
+                <p><a href="../pages/casos-de-exito.html">Success Cases</a></p>
+                <p><a href="../pages/proceso.html">Our Process</a></p>
+                <p><a href="../pages/areas-de-practica.html">Practice Areas</a></p>
+                <p><a href="../pages/articulos.html" class="active">Legal Articles</a></p>
+                <p><a href="../pages/guias-legales.html">Legal Guides</a></p>
+                <p><a href="../pages/preguntas-frecuentes.html">FAQs</a></p>
+                <p><a href="../pages/contacto.html">Contact</a></p>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-newsletter">
+                    <h3>Subscribe to our newsletter</h3>
+                    <p>Receive the latest legal news and updates directly in your inbox.</p>
+                    <form ...>
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-column social-column">
+                <h3>Find Us On</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Law Firm Lawyers & Associates. All rights reserved.
+                <a href="pages/aviso-legal.html">Legal Notice</a> |
+                <a href="pages/politica-privacidad.html">Privacy Policy</a>
+            </p>
+            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="boton-inicio">
+                ↑ Back to Top
+            </button>
+        </div>
+    </footer>
+    <!-- *********************** SCHEMA MARKUP *********************** -->
+    <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LegalService",
+                "name": "Estudio Jurídico Abogados & Asociados",
+                "image": "logo.png",
+                "priceRange": "$$$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Av. Corrientes 1234",
+                    "addressLocality": "CABA",
+                    "addressCountry": "AR"
+                }
+            }
+            </script>
+
+    <script src="../../scripts/scripts.js"></script>
+
+</body>
+
+</html>
