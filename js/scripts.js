@@ -173,7 +173,7 @@ function cambiarIdioma(idioma, nombreIdioma, claseBandera) {
     // *********** REDIRIGIR EL SITIO AL IDIOMA SELECCIONADO ************************************
     switch (idioma) {
         case 'es':
-            window.location.href = 'index.html';
+            window.location.href = '../../index.html';
             break;
         case 'en':
             window.location.href = 'idiomas/en/index.html';
@@ -185,17 +185,16 @@ function cambiarIdioma(idioma, nombreIdioma, claseBandera) {
             window.location.href = 'index.html';
     }
 }
-
 // *********** CUADRO DE BUSQUEDA - NO IMPLEMENTADA ***************************************
-document.getElementById('searchButton').addEventListener('click', function() {
+document.getElementById('searchButton').addEventListener('click', function () {
     alert('La opción seleccionada no está implementada aún.');
 });
 
-    // *********** INICIALIZACION GENERAL *****************************************************
-    document.addEventListener("DOMContentLoaded", () => {
-        initMobileMenu();
-        initTestimonialSlider();
-        animateStats();
-        initSmoothScroll();
-    });
-    
+// *********** INICIALIZACION GENERAL *****************************************************
+document.addEventListener("DOMContentLoaded", () => {
+    initMobileMenu();
+    initTestimonialSlider();
+    animateStats();
+    initSmoothScroll();
+});
+
