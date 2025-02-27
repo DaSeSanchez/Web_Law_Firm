@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../Web Law Firm v2"
 		}
 	],
 	"settings": {
