@@ -452,13 +452,6 @@ nav .center-content {
     margin: 0 auto;
 }
 
-.section-subtitle-inicio {
-    color: #001f3f;
-    font-size: 1.5em;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .certificados-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
