@@ -10,10 +10,11 @@
 			"path": "../Web Law Firm v3"
 		},
 		{
-			"path": "../Web Law Firm v3 - BKP OLD"
+			"path": "../Web Law Firm v3 - NEW LAYOUT BKP (2)"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Web Law Firm"
+		"liveServer.settings.multiRootWorkspaceName": "Web Law Firm",
+		"liveServer.settings.port": 5501
 	}
 }
